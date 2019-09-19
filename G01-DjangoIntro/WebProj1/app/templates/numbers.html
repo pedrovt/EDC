@@ -1,0 +1,12 @@
+{%  extends "layout.html" %}
+{%  block content %}
+    <h1>Your number is:</h1>
+    <h2>{{ num_arg }}</h2>
+    <br/>
+    <p><b>Simple template marker:</b></p>
+    {% ifequal num_arg 1000 %}
+        <p>Value is a thousand</p>
+    {% else %}
+        <p>Value is unknown</p>
+    {% endifequal %}
+{%  endblock %}
